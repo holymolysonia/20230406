@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20230406 집에서 연습</title>
+    <link href="css/20230406.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">
+                    <img src="img/mgz-logo-white.png" alt="로고" />
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">기술과 서비스</a></li>
+                    <li><a href="#">인사이트</a></li>
+                    <li><a href="#">메가존.디지털</a></li>
+                    <li><a href="#">인재영입</a></li>
+                </ul>
+            </nav>
+        </div><!-- .inner end -->
+    </header>
+
+    <main>
+        <section class="main_visual">
+            <video autoplay muted loop>
+                <source src="img/-91744.mp4" type="video/mp4" />
+            </video>
+            <h2> 미래사회에 대한 영감,<br />
+                새로운 미래 창조</h2>
+        </section><!-- .main_visual end -->
+
+        <section class="cont01">
+            <div class="title">
+                <h3>언제나 사람이 중심이 되는 <br />
+                    차세대 디지털 서비스를 고민합니다.</h3>
+                <p>우리 모두의 삶을 변화 시키는 주변의 모든 디지털 서비스에 대해<br />
+                    메가존.디지털은 기업의 비즈니스 혁신과 성장을 위해 오늘도 진심으로 고민합니다.</p>
+            </div><!-- .title end -->
+            <div class="list">
+                <div class="item">
+                    <figure>
+                        <img src="img/krakenimages-376KN_ISplE-unsplash.jpg" alt="이미지" />
+                    </figure>
+                    <div>
+                        <h4>언제나 사람이 중심이 되는 기업</h4>
+                        <p>차세대 혁신을 이루는 아름다운 비빔밥을 만들겠습니다.</p>
+                        <p class="look"><a href="#">자세히 보기</a></p>
+                    </div>
+                </div><!-- .item /1 end -->
+
+                <div class="item">
+                    <figure>
+                        <img src="img/krakenimages-Y5bvRlcCx8k-unsplash.jpg" alt="이미지" />
+                    </figure>
+                    <div>
+                        <h4>아름다운 밤이야이야</h4>
+                        <p>차세대 혁신을 이루는 아름다운 밤을 만들겠습니다.</p>
+                        <p class="look"><a href="#">자세히 보기</a></p>
+                    </div>
+                </div><!-- .item /2 end -->
+            </div><!-- .list end -->
+        </section><!-- .cont01 end -->
+    </main>
+    <script>
+        let cont01 = document.getElementsByClassName('cont01')[0];
+        let contImg1 = cont01.getElementsByTagName('img')[0];
+        let contImg2 = cont01.getElementsByTagName('img')[1];
+        let imgBtn1 = cont01.getElementsByClassName('look')[0];
+        let imgBtn2 = cont01.getElementsByClassName('look')[1];
+
+        imgBtn1.onmouseenter = function () {
+            contImg1.src = 'img/mimi-thian-ZKBzlifgkgw-unsplash.jpg';
+            contImg1.style.transform = 'scale(1.3)';
+            contImg1.style.transition = '1.3s';
+        }//imgBtn1.onmouseenter end
+
+        imgBtn1.onmouseleave = function () {
+            contImg1.src = 'img/krakenimages-376KN_ISplE-unsplash.jpg';
+            contImg1.style.transform = 'scale(1)';
+            contImg1.style.transition = '1.3s';
+        }//imgBtn1.onmouseleave end
+
+        imgBtn2.onmouseenter = function () {
+            contImg2.src = 'img/jason-goodman-Oalh2MojUuk-unsplash.jpg';
+            contImg2.style.transform = 'scale(1.3)';
+            contImg2.style.transition = '1.3s';
+        }//imgBtn2.onmouseenter end
+
+        imgBtn2.onmouseleave = function () {
+            contImg2.src = 'img/krakenimages-Y5bvRlcCx8k-unsplash.jpg';
+            contImg2.style.transform = 'scale(1)';
+            contImg2.style.transition = '1.3s';
+        }//imgBtn2.onmouseleave end
+    </script>
+</body>
+
+</html>
